@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".PhoneActivity"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp">
+
+    <ImageView
+        android:id="@+id/phone_image"
+        android:layout_width="300dp"
+        android:layout_height="175dp"
+        android:layout_margin="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/phone_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Смартфон:"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/phone_name_given"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/phone_os"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ОС:"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/phone_os_given"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/phone_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Экран:"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/phone_screen_given"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/phone_cpu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Процессор:"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/phone_cpu_given"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/phone_battery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Батарея:"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/phone_battery_given"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/phone_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Камера:"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/phone_camera_given"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/phone_selfie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Фронтальная камера:"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/phone_selfie_given"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/phone_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Цена:"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/phone_price_given"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/phone_button_cart"
+        android:layout_width="265dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_baseline_shopping_cart_24"
+        android:text="@string/add_to_cart"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:background="@drawable/custom_button"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:drawableStart="@drawable/ic_baseline_shopping_cart_24" />
+
+</LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".LaptopActivity"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp">
+
+    <ImageView
+        android:id="@+id/laptop_image"
+        android:layout_width="300dp"
+        android:layout_height="175dp"
+        android:layout_margin="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/laptop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Название:"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/laptop_name_given"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/laptop_cpu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Процессор:"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/laptop_cpu_given"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/laptop_gpu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Видеокарта:"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/laptop_gpu_given"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/laptop_storage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Хранилище:"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/laptop_storage_given"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/laptop_ram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ОЗУ:"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/laptop_ram_given"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/laptop_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Экран:"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/laptop_screen_given"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/laptop_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Цена:"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/laptop_price_given"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/laptop_button_cart"
+        android:layout_width="265dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_baseline_shopping_cart_24"
+        android:text="@string/add_to_cart"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:background="@drawable/custom_button"
+        android:layout_marginTop="30dp"
+        android:drawableStart="@drawable/ic_baseline_shopping_cart_24" />
+
+</LinearLayout>

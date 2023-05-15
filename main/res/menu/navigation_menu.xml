@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/sale"
+        android:icon="@drawable/zz_sale"
+        android:title="Скидки"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/category"
+        android:icon="@drawable/zz_category"
+        android:title="Категории"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/zz_home"
+        android:title="Домашняя"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/cart"
+        android:icon="@drawable/zz_cart"
+        android:title="Корзина"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/zz_profile"
+        android:title="Профиль"
+        app:showAsAction="ifRoom"/>
+</menu>

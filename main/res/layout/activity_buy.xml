@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    tools:context=".BuyActivity">
+
+    <LinearLayout
+        android:id="@+id/buy_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:padding="25dp"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/buy_welcome_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Пользователь:"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/buy_welcome_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buy_price"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/buy_price_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Итоговая цена:"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/buy_price_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/buy_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Пожалуйста, введите данные своей банковской карты:"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/card_name_surname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Держатель карты"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/register_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Номер карты" />
+
+    <LinearLayout
+        android:id="@+id/card_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/card_expiry"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:hint="Срок годности" />
+        <EditText
+            android:id="@+id/card_cvv"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:hint="CVV"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radio_group_delivery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <RadioButton
+            android:id="@+id/radio_self_pickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Самовывоз"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radio_delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Доставка" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/layout_self_pickup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <EditText
+            android:id="@+id/self_pickup_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Адрес" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_delivery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/delivery_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Delivery Field" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_pay"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:text="Оплатить"
+        android:textColor="#FFFFFF"
+        android:drawableStart="@drawable/ic_baseline_payment_24"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:layout_margin="20dp"
+        android:background="@drawable/custom_button"
+        android:drawableLeft="@drawable/ic_baseline_payment_24" />
+
+
+</LinearLayout>
